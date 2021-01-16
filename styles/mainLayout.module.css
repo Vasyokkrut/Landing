@@ -1,0 +1,94 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(39, 39, 39);
+}
+
+.navigation a div {
+  color: white;
+  margin: 1rem 0;
+  padding: 0 .5rem;
+  font-size: 2rem;
+  border-bottom: solid 2px rgb(39, 39, 39);
+}
+
+.navigation a div:hover {
+  border-bottom: solid 2px white;
+}
+
+.footerInfo {
+  display: flex;
+  color: white;
+  margin-left: 3rem;
+}
+
+.footerInfo > div {
+  display: flex;
+  align-items: center;
+}
+
+.firstFooterInfo {
+  width: 24rem;
+}
+
+.secondFooterInfo {
+  width: 24rem;
+}
+
+.thirdFooterInfo {
+  width: 10rem;
+}
+
+.footerInfo * {
+  font-size: 1.6rem;
+}
+
+.socials {
+  display: flex;
+}
+
+/* .socials:first-child {
+  margin-left: 5rem;
+} */
+
+.socials div {
+  margin: 0 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.githubLogo {
+  background-image: url('/github.png');
+  filter: invert(1);
+}
+
+.vkLogo {
+  background-image: url('/VKLogo.png');
+  filter: invert(1);
+}
+
+.footerNav div a {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .firstFooterInfo {
+    width: 15rem;
+  }
+  
+  .secondFooterInfo {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .footerInfo {
+    display: block;
+  }
+
+  .footerInfo > div {
+    padding: 1rem 0;
+  }
+}

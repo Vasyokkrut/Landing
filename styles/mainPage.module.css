@@ -1,0 +1,207 @@
+.start {
+  background-image: url('/background2.jpg');
+  background-size: cover;
+  height: 35rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome {
+  font-size: 5rem;
+  padding-top: 5rem;
+  color: white;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+.skillPicture {
+  width: 8rem;
+  height: 8rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nodejsLogo {
+  background-image: url('/nodejs.png');
+}
+
+.javascriptLogo {
+  background-image: url('/js.jpg');
+}
+
+.HTMLLogo {
+  background-image: url('/html.jpg');
+}
+
+.CSSLogo {
+  background-image: url('/css.jpg');
+}
+
+.reactLogo {
+  background-image: url('/react.jpg');
+}
+
+.mongodbLogo {
+  background-image: url('/mongodb.png');
+}
+
+.expressLogo {
+  background-image: url('/expressjs.png');
+}
+
+.skillItem {
+  text-align: center;
+  height:12rem;
+  width: 8rem;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .2);
+  border-radius: 1rem;
+  transition: .1s ease-in;
+}
+
+.skillItem div {
+  width: 8rem;
+  height: 8rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.skillItem:hover {
+  transform: translateY(-1rem)
+}
+
+.aboutMe {
+  background-image: url('/background1.jpg');
+  height: 40rem;
+  font-size: 5rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutMe >div {
+  background-color: white;
+  color: black;
+  margin: 2rem 0;
+}
+
+.landings, .fullstacks {
+  width: 35rem;
+  height: 6rem;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: height .1s ease-in-out;
+  cursor: default;
+}
+
+.landingsContent, .fullstacksContent {
+  background-repeat: no-repeat;
+  height: 0;
+  transition: height .1s ease-in-out;
+}
+
+.landings:hover, .fullstacks:hover {
+  height: 30rem;
+}
+
+@keyframes content-dropdown {
+  from {height: 0;}
+  to {height: 23rem;}
+}
+
+.landingsContent {
+  background-image: url('/landing.jpg');
+  background-size: cover;
+}
+
+.landings:hover .landingsContent {
+  height: 23rem;
+  animation: content-dropdown .1s ease-in-out;
+}
+
+.fullstacks:hover .fullstacksContent {
+  animation: content-dropdown .1s ease-in-out;
+  height: 23rem;
+}
+
+.fullstacksContent {
+  background-image: url('/fullstack.jpg');
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .welcome {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .skillPicture {
+    width: 5rem;
+    height: 5rem;
+  }
+  .skillItem {
+    width: 6rem;
+    height: 10rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+  .skillItem > div {
+    width: 6rem;
+  }
+  .skillsList {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .start {
+    display: block;
+  }
+  .welcome {
+    padding-top: 2rem;
+  }
+  .aboutMe {
+    font-size: 3rem;
+  }
+  .landings, .fullstacks {
+    width: 20rem;
+  }
+  @keyframes content-dropdown {
+    from {height: 0;}
+    to {height: 13rem;}
+  }
+  .landings:hover .landingsContent {
+    height: 13rem;
+  }
+  .fullstacks:hover .fullstacksContent {
+    height: 13rem;
+  }
+  .landings:hover, .fullstacks:hover {
+    height: 17rem;
+  }
+  .landings, .fullstacks {
+    height: 3.5rem;
+  }
+  .aboutMe {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutMe {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40rem;
+  }
+}

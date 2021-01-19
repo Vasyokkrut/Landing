@@ -1,6 +1,7 @@
+import Head from 'next/head'
+
 import MainLayout from '../components/mainLayout.js'
 import styles from '../styles/mainPage.module.css'
-import Head from 'next/head'
 
 function MainPage() {
   return (
@@ -60,13 +61,16 @@ function MainPage() {
         </div>
       </div>
       <div className={styles.aboutMe} >
-        <div className={styles.landings} >
-          <span className={styles.landingsHeader} >Landing</span>
-          <div className={styles.landingsContent} ></div>
-        </div>
-        <div className={styles.fullstacks} >
-          <span className={styles.fullstacksHeader} >Fullstack</span>
-          <div className={styles.fullstacksContent} ></div>
+        <span>Project Types</span>
+        <div>
+          <div className={styles.landings} >
+            <span className={styles.landingsHeader} >Landing</span>
+            <div className={styles.landingsContent} ></div>
+          </div>
+          <div className={styles.fullstacks} >
+            <span className={styles.fullstacksHeader} >Fullstack</span>
+            <div className={styles.fullstacksContent} ></div>
+          </div>
         </div>
       </div>
     </MainLayout>

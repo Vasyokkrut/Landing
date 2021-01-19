@@ -6,9 +6,9 @@ function MainLayout({children}) {
     <div>
       <header>
         <nav className={styles.navigation} >
-          <Link href='/' ><a><div>Welcome</div></a></Link>
-          <Link href='/about' ><a><div>About</div></a></Link>
-          <Link href='/contacts' ><a><div>Contacts</div></a></Link>
+          <Link href='/' ><a><div>Main</div></a></Link>
+          <Link href='/project' ><a><div>Project</div></a></Link>
+          <Link href='/skills' ><a><div>Skills</div></a></Link>
         </nav>
       </header>
       <main>

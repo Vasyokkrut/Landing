@@ -73,6 +73,10 @@
   color: white;
 }
 
+.mainContent {
+  background-color: white;
+}
+
 @media (max-width: 1000px) {
   .firstFooterInfo {
     width: 15rem;

@@ -29,6 +29,17 @@ function About() {
           <div className={`${styles.JavaScriptLogo} ${styles.skillLogo}`} ></div>
         </article>
         <hr style={{margin:'1rem'}} />
+        <article className={`${styles.skillInfo} ${styles.nodejs}`} >
+          <div>
+            <div className={styles.skillName} >Node.js</div>
+            <span>NPM Scripts<br /></span>
+            <span>Files Hashing<br /></span>
+            <span>NPM Packages<br /></span>
+            <span>CommonJS Modules<br /></span>
+          </div>
+          <div className={`${styles.nodejsLogo} ${styles.skillLogo}`} ></div>
+        </article>
+        <hr style={{margin:'1rem'}} />
         <article className={`${styles.skillInfo} ${styles.HTMLCSS}`} >
           <div>
             <div className={styles.skillName} >HTML & CSS</div>
@@ -74,17 +85,6 @@ function About() {
             <span>MongoDB Schemas<br /></span>
           </div>
           <div className={`${styles.mongoLogo} ${styles.skillLogo}`} ></div>
-        </article>
-        <hr style={{margin:'1rem'}} />
-        <article className={`${styles.skillInfo} ${styles.nodejs}`} >
-          <div>
-            <div className={styles.skillName} >Node.js</div>
-            <span>NPM Scripts<br /></span>
-            <span>Files Hashing<br /></span>
-            <span>NPM Packages<br /></span>
-            <span>CommonJS Modules<br /></span>
-          </div>
-          <div className={`${styles.nodejsLogo} ${styles.skillLogo}`} ></div>
         </article>
       </section>
     </MainLayout>

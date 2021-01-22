@@ -19,7 +19,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: white;
   cursor: default;
 }
 
@@ -139,6 +138,9 @@
     flex-direction: column;
     justify-content: space-between;
   }
+}
+
+@media (max-width: 1850px) {
   .skillItem {
     width: 7rem;
     height: 10rem;
@@ -157,15 +159,15 @@
   .welcome {
     padding-top: 2rem;
   }
+}
+
+@media (max-width: 1400px) {
   .aboutMe {
     font-size: 3rem;
+    height: 30rem;
   }
   .landings, .fullstacks {
     width: 20rem;
-  }
-  @keyframes content-dropdown {
-    from {height: 0;}
-    to {height: 13rem;}
   }
   .landings:hover .landingsContent {
     height: 13rem;
@@ -178,9 +180,6 @@
   }
   .landings, .fullstacks {
     height: 3.5rem;
-  }
-  .aboutMe {
-    height: 30rem;
   }
 }
 

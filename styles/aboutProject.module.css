@@ -1,0 +1,37 @@
+.intro {
+  background: linear-gradient(135deg, #ff3838, #3140eb);
+}
+
+.projectHeader {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+
+.projectIntroduction {
+  font-size: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: default;
+  padding: 2rem 0;
+}
+
+.projectIntroduction > div > div {
+  width: 25rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  text-align: center;
+  background-color: white;
+}
+
+.projectFeatures {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.feature {
+  height: 25rem;
+}

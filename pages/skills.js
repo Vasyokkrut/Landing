@@ -1,9 +1,15 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
+import animateItems from '../components/animateFunction.js'
 
 import MainLayout from '../components/mainLayout.js'
 import styles from '../styles/skills.module.css'
 
 function About() {
+  // this useEffect works once to add listeners
+  // for animate descriptions and logos
+  useEffect(animateItems, [])
+
   return (
     <MainLayout>
       <Head>
@@ -17,10 +23,10 @@ function About() {
         </div>
         <hr style={{margin:'0 1rem 1rem 1rem'}} />
         <article className={`${styles.skillInfo} ${styles.JavaScript}`} >
-          <div>
+          <div className={styles.description} >
             <div className={styles.skillName} >JavaScript</div>
             <span>Promises<br /></span>
-            <span>ES6+ Standards<br /></span>
+            <span>ES6+ Features<br /></span>
             <span>Events & Listeners<br /></span>
             <span>DOM Manipulation<br /></span>
             <span>Async/Await Syntax<br /></span>
@@ -30,7 +36,7 @@ function About() {
         </article>
         <hr style={{margin:'1rem'}} />
         <article className={`${styles.skillInfo} ${styles.nodejs}`} >
-          <div>
+          <div className={styles.description} >
             <div className={styles.skillName} >Node.js</div>
             <span>NPM Scripts<br /></span>
             <span>Files Hashing<br /></span>
@@ -41,7 +47,7 @@ function About() {
         </article>
         <hr style={{margin:'1rem'}} />
         <article className={`${styles.skillInfo} ${styles.HTMLCSS}`} >
-          <div>
+          <div className={styles.description} >
             <div className={styles.skillName} >HTML & CSS</div>
             <span>CSS 3<br /></span>
             <span>HTML 5<br /></span>
@@ -53,7 +59,7 @@ function About() {
         </article>
         <hr style={{margin:'1rem'}} />
         <article className={`${styles.skillInfo} ${styles.react}`} >
-          <div>
+          <div className={styles.description} >
             <div className={styles.skillName} >React</div>
             <span>Routing<br /></span>
             <span>React Hooks<br /></span>
@@ -66,7 +72,7 @@ function About() {
         </article>
         <hr style={{margin:'1rem'}} />
         <article className={`${styles.skillInfo} ${styles.express}`} >
-          <div>
+          <div className={styles.description} >
             <div className={styles.skillName} >Express.js</div>
             <span>Routing<br /></span>
             <span>Security<br /></span>
@@ -77,7 +83,7 @@ function About() {
         </article>
         <hr style={{margin:'1rem'}} />
         <article className={`${styles.skillInfo} ${styles.mongo}`} >
-          <div>
+          <div className={styles.description} >
             <div className={styles.skillName} >MongoDB</div>
             <span>Mongoose ORM<br /></span>
             <span>CRUD Operations<br /></span>

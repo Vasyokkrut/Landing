@@ -29,6 +29,7 @@ function animate() {
 
   let update = () => {
     // checking if all elements has been animated
+    // if yes, deleting onscroll event listener
     if (logos.length === 0 && descriptions.length === 0) {
       return window.removeEventListener('scroll', update)
     }
@@ -50,6 +51,7 @@ function animate() {
       return true
     })
   }
+  // adding onscroll event listener
   window.addEventListener('scroll', update)
 }
 

@@ -17,38 +17,30 @@ function About() {
         </div>
         <div className={styles.projectIntroduction} >
           <div>
-            <div>
-              Account
-            </div>
-            <div>
-              Pictures
-            </div>
+            <a href="#aboutAccount" >Account</a>
+            <a href="#aboutPictures" ><div>Pictures</div></a>
           </div>
           <div>
-            <div>
-              Privacy
-            </div>
-            <div>
-              Messages
-            </div>
+            <a href="#aboutSafety" >Privacy</a>
+            <a href="#aboutMessages" >Messages</a>
           </div>
         </div>
       </section>
       <section className={styles.projectFeatures} >
-        <article className={styles.feature} >
+        <article id='aboutAccount' className={styles.feature} >
           Your Own Account
         </article>
         <hr style={{margin:'1rem 2rem'}} />
-        <article className={styles.feature} >
-          Pointful Messages
-        </article>
-        <hr style={{margin:'1rem 2rem'}} />
-        <article className={styles.feature} >
+        <article id='aboutPictures' className={styles.feature} >
           Upload Your Pictures
         </article>
         <hr style={{margin:'1rem 2rem'}} />
-        <article className={styles.feature} >
-          Your Account Is Keep Safety
+        <article id='aboutSafety' className={styles.feature} >
+          Your Account Keeps Safety
+        </article>
+        <hr style={{margin:'1rem 2rem'}} />
+        <article id='aboutMessages' className={styles.feature} >
+          Pointful Messages
         </article>
       </section>
     </MainLayout>

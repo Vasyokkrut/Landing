@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang='en' >
         <Head>
+          <meta name="theme-color" content="#0000ff" />
           <meta name="description" content="landings and fullstack web developer" />
           <meta
             name="keywords"

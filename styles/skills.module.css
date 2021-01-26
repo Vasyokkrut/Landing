@@ -11,12 +11,12 @@
 }
 
 @keyframes moveLogo {
-  from {opacity: 0; transform: translateX(5rem);}
+  from {opacity: 0; transform: translateX(2rem);}
   to {opacity: 1; transform: translateX(0);}
 }
 
 @keyframes moveDescription {
-  from {opacity: 0; transform: translateX(-5rem);}
+  from {opacity: 0; transform: translateX(-2rem);}
   to {opacity: 1; transform: translateX(0);}
 }
 
@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .aboutMySkills > article {
     flex-direction: column;
     align-items: center;

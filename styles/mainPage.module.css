@@ -73,7 +73,7 @@
 }
 
 .skillItem:hover {
-  transform: translateY(-1rem)
+  transform: translateY(-1rem);
 }
 
 .aboutMe {
@@ -137,6 +137,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .start {
+    height: 25rem;
   }
 }
 

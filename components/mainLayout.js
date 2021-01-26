@@ -19,7 +19,7 @@ function MainLayout({children}) {
       <footer>
         <div className={styles.footerInfo} >
           <div className={styles.firstFooterInfo} >
-            <span>Vasyokkrut<br/>Landing page</span>
+            <span>Vasyokkrut<br/>Landing Page</span>
           </div>
           <div className={styles.secondFooterInfo} >
             <nav className={styles.footerNav} >

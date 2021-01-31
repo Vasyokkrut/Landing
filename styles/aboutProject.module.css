@@ -33,16 +33,42 @@
 }
 
 .projectIntroduction > div > a:hover {
-  background-color: #ddd;
+  background-color: rgb(205, 179, 235);
 }
 
 .projectFeatures {
   font-size: 5rem;
   text-align: center;
+  background-color: #222226;
+  color: white;
 }
 
-.feature {
+.featureContent {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 25rem;
+}
+
+.accountSignIn {
+  background-image: url('/project/accountSignIn.jpg');
+  height: 187px;
+  display: block;
+}
+
+.accountSignUp {
+  background-image: url('/project/accountSignUp.jpg');
+  height: 251px;
+  display: block;
+}
+
+.featureLogo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25rem;
+  border: 2px solid white;
+  border-radius: 1rem;
 }
 
 @media (max-width: 555px) {
@@ -50,6 +76,13 @@
     margin: 0 0 2rem 0;
     padding: 1rem 1rem;
     width: 15rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .featureContent {
+    flex-direction: column;
+    height: 50rem;
   }
   .projectIntroduction,
   .projectHeader,

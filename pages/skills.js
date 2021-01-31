@@ -13,7 +13,7 @@ function About() {
   return (
     <MainLayout>
       <Head>
-        <title>Vasyokkrut about</title>
+        <title>Vasyokkrut Skills</title>
       </Head>
       <section className={styles.aboutMySkills} >
         <div>

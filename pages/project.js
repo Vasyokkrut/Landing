@@ -40,14 +40,28 @@ function About() {
         <hr style={{margin:'1rem 2rem'}} />
         <article id='aboutPictures' className={`${styles.feature} ${styles.pictures}`} >
           Upload Your Pictures
-        </article>
-        <hr style={{margin:'1rem 2rem'}} />
-        <article id='aboutSafety' className={`${styles.feature} ${styles.security}`} >
-          Your Account is Kept Safe
           <div className={styles.featureContent} >
             <img
               className={styles.featureLogo}
-              style={{width: '25rem'}}
+              src='/project/picture1.jpg'
+            />
+            <div style={{fontSize: '1.5rem', width: '20rem'}} >
+              <span>
+                You can upload images to your posts
+              </span>
+            </div>
+            <img
+              className={styles.featureLogo}
+              src='/project/picture2.jpeg'
+            />
+          </div>
+        </article>
+        <hr style={{margin:'1rem 2rem'}} />
+        <article id='aboutSafety' className={`${styles.feature} ${styles.security}`} >
+          Your Account is kept safe
+          <div className={styles.featureContent} >
+            <img
+              className={styles.featureLogo}
               src='/project/encryption.jpeg'
             />
             <div style={{fontSize: '1.5rem', width: '20rem'}} >
@@ -57,7 +71,6 @@ function About() {
             </div>
             <img
               className={styles.featureLogo}
-              style={{width: '25rem'}}
               src='/project/cryptography.jpeg'
             />
           </div>
@@ -65,6 +78,21 @@ function About() {
         <hr style={{margin:'1rem 2rem'}} />
         <article id='aboutMessages' className={`${styles.feature} ${styles.messages}`} >
           Pointful Messages
+          <div className={styles.featureContent} >
+            <img
+              className={styles.featureLogo}
+              src='/project/post2.jpg'
+            />
+            <div style={{fontSize: '1.5rem', width: '20rem'}} >
+              <span>
+                You can create post in your account and describe it with your message
+              </span>
+            </div>
+            <img
+              className={styles.featureLogo}
+              src='/project/post1.jpg'
+            />
+          </div>
         </article>
       </section>
     </MainLayout>

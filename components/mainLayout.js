@@ -23,9 +23,9 @@ function MainLayout({children}) {
           </div>
           <div className={styles.secondFooterInfo} >
             <nav className={styles.footerNav} >
-              <div><Link href='/skills' ><a>Skills</a></Link></div>
-              <div><Link href='/project' ><a>Project</a></Link></div>
-              <div><Link href='/' ><a>Welcome</a></Link></div>
+              <div><Link href='/' ><a>Main Page</a></Link></div>
+              <div><Link href='/project' ><a>Project Page</a></Link></div>
+              <div><Link href='/skills' ><a>Skills Page</a></Link></div>
             </nav>
           </div>
           <div className={styles.thirdFooterInfo} >

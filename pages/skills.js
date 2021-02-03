@@ -76,6 +76,7 @@ function About() {
             <div className={styles.skillName} >Express.js</div>
             <span>Routing<br /></span>
             <span>Security<br /></span>
+            <span>REST API<br /></span>
             <span>Middlewares<br /></span>
             <span>JWT Authentication<br /></span>
           </div>
